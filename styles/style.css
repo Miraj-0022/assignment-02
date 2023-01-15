@@ -1,0 +1,366 @@
+/* These styles for all */
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    height: 1350px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #131313;
+    text-decoration: none;
+}
+.nav-ber-list {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.nav-ber .nav-ber-list li {
+    list-style: none;
+}
+.nav-ber-list li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    padding: 20px;
+}
+/* responsive part styles */
+@media screen and (max-width:576px) {
+    .container {
+        height: 700px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-title {
+        padding: 5px;
+        margin: 0;
+        margin-top: 0;
+        font-weight: 500px;
+        font-size: 20px;
+    }
+    .nav-ber-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}
+
+.brand {
+    text-align: center;
+    /* margin:100px 530px 50px 530px; */
+    padding:100px 200px 50px 200px;
+}
+.brand-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+.brand-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;;
+}
+.explore-button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 20px 25px;
+}
+
+@media screen and (max-width:576px) {
+    .brand {
+        text-align: start;
+        padding: 5px 5px 0 5px;
+    }
+    .brand-title {
+        font-weight: 500px;
+        font-size: 30px;
+    }
+    .brand-description {
+        font-size: 10px;
+    }
+    .explore-button {
+        margin-top: 10px;
+    }
+}
+
+.banner {
+    padding: 0 100px 20px 100px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:576px) {
+    .banner {
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+
+.container-two {
+    display: flex;
+    align-items: center;
+    gap:70px;
+    padding:50px 120px 70px 120px;
+
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 15px;
+}
+.quick-container {
+    
+}
+.quick-title {
+    font-size: 45px;
+}
+.quick-title .quick {
+    font-weight: 400;
+    color: #727272;
+}
+.quick-title .of {
+    font-weight: 700;
+    color: #131313;
+}
+.quick-title .feature {
+    font-weight: 700;
+    color: #FF900E;
+}
+.quick-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+/* media responsive part styles */
+@media screen and (max-width:576px) {
+    .container-two {
+        flex-direction: column;
+    }
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+} 
+
+.sub-container-three {
+    display: flex;
+    gap: 40px;
+}
+.line-feature{
+    display: flex;
+    gap: 20px;
+}
+.line{
+    width: 5px;
+    height: 160px;
+    background: #FF900E;
+}
+.feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 25px;
+}
+.feature-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.desktop-container {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+.desktop-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.desktop-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.experience-button {
+    position: relative;
+    bottom:150px;
+    left:700px;
+    background-color: #FF900E;
+    padding: 45px 40px;
+    border: 0;
+    border-radius: 8px;
+}
+.experience-button-title {
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+.experience-button-description {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+@media screen and (max-width:576px) {
+    .sub-container-three {
+        flex-direction: column;
+    }
+    .sub-container-three img {
+        width: 100%;
+        height: 100%;
+    }
+    .experience-button {
+        position: static;
+    }
+}
+
+.container-four {
+    padding: 100px 700px 100px 100px;
+}
+.container-four-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 20px;
+}
+.container-four-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+@media screen and (max-width:576px) {
+    .container-four {
+        padding: 10px;
+    }
+}
+
+
+.container-five {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.award-container {
+    text-align: center;
+    padding: 45px 35px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    
+}
+.award-container:hover{
+    transform: rotate(270deg);
+    opacity: 1;
+    transition-duration: 3s;
+}
+.award-num {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+.award-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+@media screen and (max-width:576px) {
+    .container-five {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .award-container {
+        margin-bottom: 5px;
+    }
+}
+
+.sponsor-container {
+    text-align: center;
+    margin-top: 150px;
+}
+.sponsor-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.sponsor-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+@media screen and (max-width:576px) {
+    .sponsor-container {
+        margin-top: 50px;
+        padding: 10px;
+    }
+}
+
+
+.spotify-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px 0 100px;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 576px) {
+    .spotify-container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+    .spotify-logo {
+        margin-bottom: 20px;
+    }
+}
+.footer-container {
+    width: 1200px;
+    height: 80px;
+    align-items: center;
+    background-color:#FFF4E7;
+    border-radius: 8px;
+    padding: 40px 70px 40px 70px;
+}
+.footer {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .footer-container {
+        width: 100%;
+        height: 80%;
+        padding: 10px;
+    }
+}
